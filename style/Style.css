@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: system-ui;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-height: 90vh;
+}
+
+.user-interactivity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+}
+
+.encrypt_header {
+    display: flex;
+    align-items: center;
+}
+
+.encrypt_header h1 {
+    color: #343a40;
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.encrypt_header img {
+    object-fit: contain;
+    margin-right: 5%;
+}
+
+.encrypt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.encrypt-form input {
+    border: none;
+    border-radius: 15px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem;
+    width: 90%;
+}
+
+.encrypt-form span {
+    color: #999;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.encrypt-buttons {
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-width: 250px;
+    padding: 0.7rem 1.5em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.encrypt-buttons_encriptado {
+    background-color: #0a3871;
+    color: #fff;
+}
+
+.encrypt-buttons_desencriptado {
+    background-color: transparent;
+    color: #0a3871;
+    outline: 1px solid #0a3871;
+}
+
+.encrypt-buttons_encriptado:hover {
+    background-color: #062750;
+}
+
+.encrypt-buttons_desencriptado:hover {
+    outline: 1px solid #062750;
+    background-color: #8cb0dc;
+}
+
+.respuesta {
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+.placeholder_text {
+    color: #495057;
+    min-height: 50px;
+}
+
+.ocultarTexto {
+    display: none;
+}
+
+.encryptForm textarea {
+    border: none;
+    border-radius: 15px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem;
+    resize: none;
+    width: 100%;
+}
+
+#copiado {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 1rem;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}

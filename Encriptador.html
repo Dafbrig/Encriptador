@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/logica.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <article class="user-interactivity">
+                <header class="encrypt_header">
+                    <img src="img/Vector.png">
+                    <h1>Encriptador</h1>
+                </header>
+                <form id="encryptForm" class="encrypt-form">
+                    <input id="textInput" name="textInput" placeholder="Ingresa tu texto aquí" autocomplete="off" />
+                    <span>Pd: Solo letras minúsculas sin acentos.</span>
+                </form>                            
+                <div class="buttons-container">
+                    <button id="encriptar" class="encrypt-buttons encrypt-buttons_encriptado" onclick="encriptar(); ocultarWarning();">Encriptar Código</button>
+                    <button id="desencriptar" class="encrypt-buttons encrypt-buttons_desencriptado" onclick="desencriptar(); mostrarWarning();">Desencriptar Código</button>
+                </div>
+                <footer>@Dafbrig</footer>
+            </article>
+            <aside class="respuesta">
+                <article id="placeholderInfo">
+                    <img src="img/Muneco.png">
+                    <p id="warning" class="placeholder_text">Ingresa el texto que quieras encriptar o desencriptar</p>
+                </article>
+                <article id="textoDes" class="ocultarTexto">
+                    <form id="decryptedForm" class="encryptForm">
+                        <textarea id="textArea" placeholder="Texto Encriptado/Desencriptado"></textarea>
+                    </form>
+                    <button id="copiado" class="encrypt-buttons encrypt-buttons_desencriptado">Copiar Texto</button>
+                </article>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
